@@ -2,6 +2,7 @@ import "./App.css";
 import "./header.css";
 import "./character-cards.css";
 import "./character-ratings.css";
+import "./reset.css";
 
 function App() {
   return (
@@ -14,6 +15,10 @@ function App() {
           <li>support us</li>
         </nav>
       </header>
+      <section id="character-ratings">
+        <h4>Top Characters</h4>
+        <table></table>
+      </section>
     </>
   );
 }
