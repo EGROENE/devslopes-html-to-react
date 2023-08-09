@@ -17,7 +17,13 @@ function App() {
       </header>
       <section id="character-ratings">
         <h4>Top Characters</h4>
-        <table></table>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Skillset</th>
+            <th>Votes</th>
+          </tr>
+        </table>
       </section>
     </>
   );
