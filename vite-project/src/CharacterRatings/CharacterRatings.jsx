@@ -10,9 +10,11 @@ class CharacterRatings extends React.Component {
         return b.votes - a.votes;
       })
       .slice(0, 5);
+
     const isIndexMultipleOfTwo = (character) => {
       return (topCharacters.indexOf(character) + 1) % 2 === 0 ? true : false;
     };
+
     return (
       <section id="character-ratings">
         <h4>Top Characters</h4>
@@ -39,7 +41,9 @@ class CharacterRatings extends React.Component {
     );
   }
 }
+
 CharacterRatings.propTypes = {
   data: PropTypes.array,
 };
+
 export default CharacterRatings;

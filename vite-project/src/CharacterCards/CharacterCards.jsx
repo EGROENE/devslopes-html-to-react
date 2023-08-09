@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 
 const CharacterCards = (props) => {
   const data = props.data;
+
   return (
     <section id="character-cards">
       {data.map((character) => (
@@ -18,7 +19,9 @@ const CharacterCards = (props) => {
     </section>
   );
 };
+
 CharacterCards.propTypes = {
   data: PropTypes.array,
 };
+
 export default CharacterCards;
