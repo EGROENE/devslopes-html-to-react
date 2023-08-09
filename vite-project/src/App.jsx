@@ -4,7 +4,6 @@ import "./character-cards.css";
 import "./character-ratings.css";
 import "./reset.css";
 import { data } from "../../public/fma-data";
-console.log(data);
 function App() {
   let topCharacters = data
     .sort(function (a, b) {
@@ -45,6 +44,18 @@ function App() {
             ))}
           </tbody>
         </table>
+      </section>
+      <section id="character-cards">
+        {data.map((character) => (
+          <div key={character.name} className="card">
+            <div className="card-titles">
+              <h3>{character.name}</h3>
+              <h4>{character.nickName}</h4>
+            </div>
+            <img src={character.imageUrl} alt="" />
+            <p>{character.background}</p>
+          </div>
+        ))}
       </section>
     </>
   );
