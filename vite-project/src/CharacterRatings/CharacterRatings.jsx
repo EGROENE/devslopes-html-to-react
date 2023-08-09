@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "../character-ratings.css";
+import "./character-ratings.css";
 
 class CharacterRatings extends React.Component {
   render() {

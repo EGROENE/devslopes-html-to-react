@@ -1,4 +1,4 @@
-import "../character-cards.css";
+import "./character-cards.css";
 import PropTypes from "prop-types";
 
 const CharacterCards = (props) => {
