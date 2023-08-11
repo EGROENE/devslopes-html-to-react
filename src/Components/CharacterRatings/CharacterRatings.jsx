@@ -6,6 +6,7 @@ class CharacterRatings extends React.Component {
   render() {
     const { characterData } = this.props;
     let topCharacters = characterData
+      .slice()
       .sort(function (a, b) {
         return b.votes - a.votes;
       })
