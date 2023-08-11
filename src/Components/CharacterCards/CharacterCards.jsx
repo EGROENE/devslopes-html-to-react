@@ -2,11 +2,11 @@ import "./character-cards.css";
 import PropTypes from "prop-types";
 
 const CharacterCards = (props) => {
-  const data = props.data;
+  const characterData = props.characterData;
 
   return (
     <section id="character-cards">
-      {data.map((character) => (
+      {characterData.map((character) => (
         <div key={character.name} className="card">
           <div className="card-titles">
             <h3>{character.name}</h3>
@@ -21,7 +21,7 @@ const CharacterCards = (props) => {
 };
 
 CharacterCards.propTypes = {
-  data: PropTypes.array,
+  characterData: PropTypes.array,
 };
 
 export default CharacterCards;

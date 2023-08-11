@@ -15,8 +15,8 @@ function App() {
           <li>support us</li>
         </nav>
       </header>
-      <CharacterRatings data={data} />
-      <CharacterCards data={data} />
+      <CharacterRatings characterData={data} />
+      <CharacterCards characterData={data} />
     </>
   );
 }

@@ -4,8 +4,8 @@ import "./character-ratings.css";
 
 class CharacterRatings extends React.Component {
   render() {
-    const data = this.props.data;
-    let topCharacters = data
+    const characterData = this.props.characterData;
+    let topCharacters = characterData
       .sort(function (a, b) {
         return b.votes - a.votes;
       })
@@ -43,7 +43,7 @@ class CharacterRatings extends React.Component {
 }
 
 CharacterRatings.propTypes = {
-  data: PropTypes.array,
+  characterData: PropTypes.array,
 };
 
 export default CharacterRatings;
