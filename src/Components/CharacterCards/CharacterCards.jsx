@@ -1,9 +1,7 @@
 import "./character-cards.css";
 import PropTypes from "prop-types";
 
-const CharacterCards = (props) => {
-  const characterData = props.characterData;
-
+const CharacterCards = ({ characterData }) => {
   return (
     <section id="character-cards">
       {characterData.map((character) => (
