@@ -4,16 +4,12 @@ import "./character-ratings.css";
 
 class CharacterRatings extends React.Component {
   render() {
-    const characterData = this.props.characterData;
+    const { characterData } = this.props;
     let topCharacters = characterData
       .sort(function (a, b) {
         return b.votes - a.votes;
       })
       .slice(0, 5);
-
-    const isIndexMultipleOfTwo = (character) => {
-      return (topCharacters.indexOf(character) + 1) % 2 === 0 ? true : false;
-    };
 
     return (
       <section id="character-ratings">
@@ -25,10 +21,10 @@ class CharacterRatings extends React.Component {
               <th>Skillset</th>
               <th>Votes</th>
             </tr>
-            {topCharacters.map((character) => (
+            {topCharacters.map((character, index) => (
               <tr
                 key={character.name}
-                className={isIndexMultipleOfTwo(character) ? "light" : "dark"}
+                className={(index + 1) % 2 === 0 ? "light" : "dark"}
               >
                 <td>{character.name}</td>
                 <td>{character.skillset.join(", ")}</td>
