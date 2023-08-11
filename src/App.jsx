@@ -1,5 +1,5 @@
 import "./App.css";
-import { data } from "../../public/fma-data";
+import { data } from "../public/fma-data";
 import CharacterRatings from "../src/Components/CharacterRatings/CharacterRatings";
 import CharacterCards from "../src/Components//CharacterCards/CharacterCards";
 import "./header.css";
