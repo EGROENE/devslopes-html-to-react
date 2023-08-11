@@ -1,4 +1,4 @@
-#character-cards {
+#characterCards {
   width: 90%;
   min-height: 33vh;
   background-color: white;
@@ -38,7 +38,7 @@
   color: white;
 }
 
-.card-titles {
+.cardTitles {
   background-color: #00000033;
   font-size: 30px;
   position: absolute;

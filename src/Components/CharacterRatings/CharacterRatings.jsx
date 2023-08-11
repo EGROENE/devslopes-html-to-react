@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./character-ratings.css";
+import "./characterRatings.css";
 
 class CharacterRatings extends React.Component {
   render() {
@@ -13,7 +13,7 @@ class CharacterRatings extends React.Component {
       .slice(0, 5);
 
     return (
-      <section id="character-ratings">
+      <section id="characterRatings">
         <h4>Top Characters</h4>
         <table>
           <tbody>

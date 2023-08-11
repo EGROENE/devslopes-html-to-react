@@ -1,4 +1,4 @@
-#character-ratings {
+#characterRatings {
   width: 90%;
   min-height: 33vh;
   background-color: white;
@@ -10,7 +10,7 @@
   padding: 10px;
 }
 
-#character-ratings h4 {
+#characterRatings h4 {
   font-size: 20px;
 }
 
